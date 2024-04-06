@@ -1,11 +1,24 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
-interface Props {
-  children: string;
-}
-
-const Header = ({ children }: Props) => {
-  return <div className="container text-center">{children}</div>;
+const Header = () => {
+  return (
+    <header className="header">
+      <div className="logo"></div>
+      <nav className="navigation">
+        <ul>
+          <li>
+            <a
+              href="https://www.google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Google is free
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
 };
 
 export default Header;
