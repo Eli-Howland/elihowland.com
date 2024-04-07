@@ -2,21 +2,16 @@ import React, { ReactNode } from "react";
 
 const Header = () => {
   return (
-    <header className="header">
-      <div className="logo"></div>
-      <nav className="navigation">
-        <ul>
-          <li>
-            <a
-              href="https://www.google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Google is free
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <header
+      className="conatiner text-center"
+      style={{ backgroundColor: "lightblue" }}
+    >
+      {" "}
+      <div className="row">
+        {" "}
+        <div className="col-8 border">1 of 1</div>
+        <div className="col-4"> 1 of 2</div>
+      </div>
     </header>
   );
 };
