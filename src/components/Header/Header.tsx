@@ -18,7 +18,7 @@ const Header = () => {
           </div>
           <div className="col-5 p-2">
             <h5 style={{fontFamily: "sans-serif", fontWeight:"300", textAlign:"center", marginTop:"2%"}}>
-              Project 1
+              <a href="src/assets/EliHowlandResume.pdf" style={{fontWeight: "700", color:"white"}}>Resume</a>
               <span style={{margin:"5%"}}></span>
               Project 2
               <span style={{margin:"5%"}}></span>
