@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import GitHub from "./GitHub";
 import Linkedin from "./Linkedin";
 import Gmail from "./Gmail";
-import Popup from "../../../../old_code/src/components/Popup/Popup";
-import TodoistForm from "../../../../old_code/src/components/Popup/TodoistForm";
-import Banner from "../../../../old_code/src/components/Banner/Banner";
+import Popup from "../Popup/Popup";
+import Banner from "../Banner/Banner";
+import TodoistForm from "../Popup/TodoistForm";
 
 type BannerStatus = "success" | "failure";
 
