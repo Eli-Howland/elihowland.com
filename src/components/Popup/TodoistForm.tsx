@@ -7,9 +7,10 @@ interface Props {
 
 const TodoistForm = ({ onSubmit }: Props) => {
   const [formValues, setFormValues] = useState({
+    // project: "",
     taskName: "",
     taskDescription: "",
-    project: "",
+    taskPriority: 1,
   });
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -27,8 +28,13 @@ const TodoistForm = ({ onSubmit }: Props) => {
     try {
       const response = await fetch(apiUrl, {
         method: "POST",
+        headers: {
+          "Content-Type": "application/json", // Specify that the request body is JSON
+        },
         body: JSON.stringify(formValues),
       });
+      console.log("this is the body");
+      console.log(response.body);
 
       if (!response.ok) {
         onSubmit(`Form submission failed (womp womp)`, "failure");
@@ -48,6 +54,16 @@ const TodoistForm = ({ onSubmit }: Props) => {
       <div className="form-header">TODOIST</div>
       <div className="form-body"> Add a task to my Todoist</div>
       <div className="form-body">
+        {/* <label className="form-question">
+          {" "}
+          Project :{" "}
+          <input
+            type="text"
+            name="project"
+            value={formValues.project}
+            onChange={handleInputChange}
+          />{" "}
+        </label> */}
         <label className="form-question">
           {" "}
           Task Name:{" "}
@@ -69,12 +85,11 @@ const TodoistForm = ({ onSubmit }: Props) => {
           />{" "}
         </label>
         <label className="form-question">
-          {" "}
-          Project :{" "}
+          Priority (1 - 4, 4 being the highest)
           <input
             type="text"
-            name="project"
-            value={formValues.project}
+            name="taskPriority"
+            value={formValues.taskPriority}
             onChange={handleInputChange}
           />{" "}
         </label>
