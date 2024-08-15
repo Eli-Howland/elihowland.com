@@ -1,5 +1,7 @@
 import React from "react";
 import Header from "../components/Header/Header";
+import Headshot from "../components/Homepage/Headshot";
+import Introduction from "../components/Homepage/Introduction";
 
 // TODO:
 // 1.Picture
@@ -10,8 +12,26 @@ import Header from "../components/Header/Header";
 
 const HomePage = () => {
   return (
-    <div  className="bg-dark-subtle" style={{height: "100vh"}}>
-      <Header></ Header>
+    <div
+      style={{
+        display: "block",
+        height: "100vh",
+        maxHeight: "100vh",
+        maxWidth: "100vw",
+        backgroundColor: "gray",
+      }}
+    >
+      <Header></Header>
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+        }}
+      >
+        <Introduction></Introduction>
+        <Headshot></Headshot>
+      </div>
     </div>
   );
 };
