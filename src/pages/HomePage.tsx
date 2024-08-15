@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../../../elihowland.com/src/components/Header/Header";
+import Header from "../components/Header/Header";
 import Headshot from "../components/Homepage/Headshot";
 import Introduction from "../components/Homepage/Introduction";
 
@@ -22,6 +22,7 @@ const HomePage = () => {
       }}
     >
       <Header></Header>
+
       <div
         style={{
           display: "flex",
