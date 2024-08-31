@@ -1,6 +1,7 @@
 import Header from "../components/Header/Header";
 import Headshot from "../components/Homepage/Headshot";
 import Introduction from "../components/Homepage/Introduction";
+import "../App.css";
 
 // TODO:
 // 1.Picture
@@ -12,13 +13,14 @@ import Introduction from "../components/Homepage/Introduction";
 const HomePage = () => {
   return (
     <div
-      style={{
-        display: "block",
-        height: "100vh",
-        maxHeight: "100vh",
-        maxWidth: "100vw",
-        backgroundColor: "gray",
-      }}
+      // style={{
+      //   display: "block",
+      //   height: "100vh",
+      //   maxHeight: "100vh",
+      //   maxWidth: "100vw",
+      //   backgroundColor: "gray",
+      // }}
+      className="default-page"
     >
       <Header></Header>
 

@@ -1,5 +1,5 @@
 const WeddingPage = () => {
-  return <div>HELLO WORLD</div>;
+  return <div className="default-page">HELLO WORLD</div>;
 };
 
 export default WeddingPage;

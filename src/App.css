@@ -1,0 +1,16 @@
+.default-page {
+  display: block;
+  height: 100vh;
+  max-height: 100vh;
+  max-width: 100vw;
+  background-color: gray;
+}
+
+/* 
+.default-page-text {
+    padding: 1%;
+    justify-content: center;
+    position: relative;
+    left: 10%;
+    width: 40%;
+} */
