@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import GitHub from "./GitHub";
 import Linkedin from "./Linkedin";
 import Gmail from "./Gmail";
@@ -90,6 +91,14 @@ const Header: React.FC = () => {
                 status={bannerState.status}
               />
             )}
+            <span style={{ margin: "5%" }}></span>
+            <Link
+              to="/wedding"
+              style={{ fontWeight: "700", color: "white" }}
+              target="_blank"
+            >
+              Wedding
+            </Link>
           </h5>
         </div>
         <div className="col p-3" style={{ textAlign: "right" }}>
