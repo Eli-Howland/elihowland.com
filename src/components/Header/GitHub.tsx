@@ -1,5 +1,3 @@
-import React, { Children, ReactNode } from "react";
-
 interface Props {
   width: number;
 }

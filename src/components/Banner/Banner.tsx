@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "../css/Banner.css";
 
 interface Props {

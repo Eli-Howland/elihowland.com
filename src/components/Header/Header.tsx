@@ -19,15 +19,6 @@ const Header: React.FC = () => {
   const [showPasswordPopup, setShowPasswordPopup] = useState(false);
   const [bannerState, setBannerState] = useState<BannerState | null>(null);
 
-  // useEffect(() => {
-  //   const isAuthenticated = sessionStorage.getItem("isAuthenticated");
-  //   if (isAuthenticated) {
-  //     setShowTodoistPopup(true);
-  //   } else {
-  //     setShowPasswordPopup(true);
-  //   }
-  // }, []);
-
   const handlePasswordFormSubmit = (message: string, status: BannerStatus) => {
     if (status === "success") {
       setShowPasswordPopup(false);

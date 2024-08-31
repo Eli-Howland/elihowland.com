@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../components/Header/Header";
 import Headshot from "../components/Homepage/Headshot";
 import Introduction from "../components/Homepage/Introduction";
