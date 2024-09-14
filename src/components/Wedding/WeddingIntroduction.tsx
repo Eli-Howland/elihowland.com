@@ -1,9 +1,7 @@
-import "../css/Wedding.css";
+import "../css/Wedding/Wedding.css";
 
 const WeddingIntroduction = () => {
-  return (
-    <div className="wedding-introduction">HERES LIKE WAY MORE TEXT THAT</div>
-  );
+  return <div className="wedding-introduction">HEYYY</div>;
 };
 
 export default WeddingIntroduction;

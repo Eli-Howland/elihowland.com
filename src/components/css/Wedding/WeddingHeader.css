@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+.wedding-header-background-default {
+  width: 100vw;
+  height: 10vh;
+  /* background-color: purple; */
+}
+
+.wedding-header-text {
+  font-size: 7.5rem;
+  /* justify-content: center; */
+  left: 50%;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Great Vibes", sans-serif;
+}
